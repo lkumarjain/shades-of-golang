@@ -55,3 +55,15 @@ In Go, an interface equals to another interface, only if the concrete value and 
 ## why-goroutine-execution-did-not-complete
 
 In Go, application does not wait for all goroutines to complete before it exists. This is a most common mistake done by a developer in early days of learning Go. We can avoid this using WaitGroup a most common solution, it allows us to wait in the main for goroutines to complete. Another solution is to pass goroutine execution state using channel.
+
+## working-with-closed-channel
+
+Receiving from a closed channel is safe, whereas writing on closed channel throws a panic. Second value received from the channel, indicates that is there more moves to be received or not. This is a well-documented behavior, but it's not very intuitive for new Go developers who might expect the send behavior to be similar to the receive behavior. This is complex enough and needs quite a good amount of thought as this may be resolved with minor code change or may need change in design.
+
+## invalid-memory-address-or-nil-pointer-dereference 
+
+Go developers many times faces the issue of [dereferencing](https://lkumarjain.blogspot.com/2020/01/why-calling-method-on-nil-struct.html) of a `nil` pointer. An uninitialized pointer is nil, and you can’t easily follow the nil pointer. If `x is nil`, an attempt to evaluate `*x` will cause a run-time panic.
+
+## the-trim-function 
+
+The [Trim](https://golang.org/pkg/strings/#Trim), [Trim Left](https://golang.org/pkg/strings/#TrimLeft) and [Trim Right](https://golang.org/pkg/strings/#TrimRight) functions strip all Unicode code points contained in a cut-set. To strip a trailing string, you should make use of [Trim Suffix](https://golang.org/pkg/strings/#TrimSuffix) or [Trim Prefix](https://golang.org/pkg/strings/#TrimPrefix).

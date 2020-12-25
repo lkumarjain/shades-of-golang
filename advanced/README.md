@@ -36,6 +36,6 @@ You might use a defer in the code block and think that this will be called at th
 
 You might think the sender will not be blocked until your message is processed by the receiver. Depending on the machine where you are running the code, the receiver goroutine may or may not have enough time to process the message before the sender continues its execution.
 
-## working-with-closed-channel
+## where-is-my-copy 
 
-Receiving from a closed channel is safe, whereas writing on closed channel throws a panic. Second value received from the channel, indicates that is there more moves to be received or not. This is a well-documented behavior, but it's not very intuitive for new Go developers who might expect the send behavior to be similar to the receive behavior. This is complex enough and needs quite a good amount of thought as this may be resolved with minor code change or may need change in design.
+The copy function in the Go, copies minimum elements of the source to destination, to ensure correct coping, you should allocate sufficient destination slice. The copy number of elements copied. Alternatively, you can use append function in Go to copy array elements, make a note that, size (capacity) of the append slice will be larger than the length of slice.

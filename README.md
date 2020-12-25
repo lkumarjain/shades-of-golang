@@ -50,6 +50,9 @@ These are little tricky as to fix as your program behave abruptly at runtime. We
 - empty-structs-in-the-json-text-output
 - nil-is-not-equal-to-nil
 - why-goroutine-execution-did-not-complete
+- working-with-closed-channel
+- invalid-memory-address-or-nil-pointer-dereference
+- the-trim-function
 
 ## Advanced
 
@@ -65,4 +68,5 @@ These are the most complex Gotchas and needs good amount of digging to identify 
 - unexpected-value-is-being-passed-in-differed-function
 - wrong-use-of-defer-can-cause-resource-leak
 - why-execution-flow-is-blocked-for-channel
-- working-with-closed-channel
+- where-is-my-copy
+
