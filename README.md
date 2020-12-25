@@ -1,8 +1,8 @@
 # Shades of Go
 
-![alt](https://cdn.evilmartians.com/front/posts/errors-in-go-from-denial-to-acceptance/cover-a684519.png)
-
 Go is a simple and powerful language, but unlike any other language it also has few Gotchas… Some of these mistakes are natural traps for programmers, especially if you are accustomed to some other language thought process.
+
+![alt](https://cdn.evilmartians.com/front/posts/errors-in-go-from-denial-to-acceptance/cover-a684519.png)
 
 > Gotcha is a valid construct in a system, program or programming language that works as documented but is counter-intuitive and almost invites mistakes because it is both easy to invoke and unexpected or unreasonable in its outcome.
 Source: [Wikipedia](https://en.wikipedia.org/wiki/Gotcha_(programming))
@@ -11,9 +11,9 @@ I am trying to list couple of `Gotchas` along with `alternatives` to address the
 
 ## Simplest
 
-![alt](https://miro.medium.com/max/6250/1*oL0hjMQxldCYMKRb0a3yhg.png)
-
 These are very simplest form of Gotchas as we can catch them at compile time. Compiler or linters (static analysis tools) complains about these mistakes and we can resolve them quickly. Some of them are:  
+
+![alt](https://miro.medium.com/max/6250/1*oL0hjMQxldCYMKRb0a3yhg.png)
 
 - unexpected semicolon or newline before `{`
 - *** declared and `not used`
@@ -33,9 +33,9 @@ These are very simplest form of Gotchas as we can catch them at compile time. Co
 
 ## Intermediate
 
-![alt](https://confusedcoders.com/wp-content/uploads/2016/10/golang-1.jpg)
-
 These are little tricky as to fix as your program behave abruptly at runtime. We can address such Gotchas with little investigation because these are directly visible at runtime in form of unexpected behavior, panic etc.
+
+![alt](https://confusedcoders.com/wp-content/uploads/2016/10/golang-1.jpg)
 
 - variable-shadow
 - zero-sized-variables
@@ -53,9 +53,9 @@ These are little tricky as to fix as your program behave abruptly at runtime. We
 
 ## Advanced
 
-![alt](https://confusedcoders.com/wp-content/uploads/2016/10/golang.jpg)
-
 These are the most complex Gotchas and needs good amount of digging to identify and address as they may not be directly visible in the program such as resource leak, blocking channel, deadlocks, routine leaks, infinite loop etc.
+
+![alt](https://confusedcoders.com/wp-content/uploads/2016/10/golang.jpg)
 
 - iota-does-not-always-start-with-zero
 - array-function-arguments
