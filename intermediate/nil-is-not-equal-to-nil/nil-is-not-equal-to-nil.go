@@ -24,7 +24,7 @@ func trap() {
 
 	// 'res' is not 'nil', but its value is 'nil'
 	if res := work(-1); res != nil {
-		fmt.Println("Trap", "good result:", res) //Prints: Trap good result: <nil>
+		fmt.Println("Trap", "good result:", res) // Prints: Trap good result: <nil>
 	} else {
 		fmt.Println("Trap", "bad result (res is nil)")
 	}
@@ -37,7 +37,7 @@ func alternative() {
 		if arg > 0 {
 			result = &struct{}{}
 		} else {
-			return nil //return an explicit 'nil'
+			return nil // return an explicit 'nil'
 		}
 
 		return result
@@ -50,6 +50,6 @@ func alternative() {
 	}
 }
 
-// Output of program:
+// Output :
 // Trap good result: <nil>
 // Alternative bad result (res is nil)

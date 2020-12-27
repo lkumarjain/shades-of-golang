@@ -58,7 +58,7 @@ func alternative2() {
 	fmt.Println("Alternative2", isValidNumber(3)) //prints: Alternative2 false (ok)
 }
 
-// Output of a program:
+// Output :
 // Trap false
 // Trap true
 // Trap false

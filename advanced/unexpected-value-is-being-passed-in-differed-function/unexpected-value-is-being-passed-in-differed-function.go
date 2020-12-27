@@ -25,6 +25,6 @@ func alternative() {
 	i = 100 // Changing this value also changes value in differ
 }
 
-// Output:
+// Output :
 // Trap result => 40
 // Alternative result => 200

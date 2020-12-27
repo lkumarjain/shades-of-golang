@@ -63,7 +63,7 @@ func alternative2() {
 	fmt.Println()
 }
 
-// Output of Program:
+// Output :
 // Trap N5  N5  N5  N5  N5
 // Alternative1 N5  N2  N1  N4  N3
 // Alternative2 N5  N3  N4  N2  N1

@@ -52,7 +52,7 @@ func alternative() {
 	}
 }
 
-// Output of this program:
+// Output :
 // Trap: Requesting target: https://lkumarjain.blogspot.com
 // Trap: Requesting target: https://github.com/lkumarjain
 // Trap: Requesting target: https://lkumarjain.blogspot.com/2020/11/golang-from-java-developer-point-of-view.html

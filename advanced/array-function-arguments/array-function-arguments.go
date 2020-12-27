@@ -48,7 +48,7 @@ func viaSlice() {
 	fmt.Println("Slice ", a) // prints [7 2 3 4 5 6]
 }
 
-// Output of Program:
+// Output :
 // Trap  [7 2 3 4 5 6]
 // Trap  [1 2 3 4 5 6]
 // Alternative  &[7 2 3 4 5 6]

@@ -25,6 +25,6 @@ func main() {
 	fmt.Println(x, y) //prints: 1 2
 }
 
-// Output or the program is:
+// Output :
 // 0 1
 // 1 2

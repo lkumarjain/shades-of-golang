@@ -15,7 +15,7 @@ func main() {
 }
 
 func trap1() {
-	recover() // This cal does not do anything a we are not calling this in defer
+	recover() // This call does not do anything a we are not calling this in defer
 	panic("Trap1 Panic !!")
 }
 

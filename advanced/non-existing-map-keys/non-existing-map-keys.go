@@ -33,6 +33,6 @@ func alternative() {
 	}
 }
 
-// Output of this Program:
+// Output :
 // Trap  entry exist
 // Alternative  no entry

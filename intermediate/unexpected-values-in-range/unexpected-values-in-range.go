@@ -25,3 +25,7 @@ func alternative() {
 		fmt.Println(v) //prints a, b, c
 	}
 }
+
+// Output :
+// 0, 1, 2
+// a, b, c

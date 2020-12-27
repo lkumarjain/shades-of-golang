@@ -55,7 +55,7 @@ func alternative() {
 	fmt.Println(len(s2), cap(s2), s2) // prints 4 4 [12 13 14 15]
 }
 
-// Output of Program:
+// Output :
 // 5 5 [1 2 3 4 5]
 // 4 4 [2 3 4 5]
 // 5 5 [1 12 13 14 15]

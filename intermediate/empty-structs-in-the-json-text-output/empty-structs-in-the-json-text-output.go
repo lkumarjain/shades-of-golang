@@ -7,8 +7,8 @@ import (
 
 // Person - Struct to hold Person information
 type Person struct {
-	Name string
-	age  int
+	Name string // Exported in Json
+	age  int    // Does not export in Json
 }
 
 // Only exported fields of a Go struct will be present in the JSON output.
@@ -29,7 +29,7 @@ func main() {
 	fmt.Printf("%#v\n", o) //prints: main.Person{Name:"Person Name", age:0}
 }
 
-// Output of program:
+// Output :
 // main.Person{Name:"Person Name", age:22}
 // {"Name":"Person Name"}
 // main.Person{Name:"Person Name", age:0}

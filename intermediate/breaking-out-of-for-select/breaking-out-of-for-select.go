@@ -12,7 +12,7 @@ import (
 // but this may not be a solution every time another alternative is to use label in break.
 func main() {
 	trap()
-	solution()
+	alternative()
 }
 
 func trap() {
@@ -25,10 +25,11 @@ func trap() {
 	}
 
 	fmt.Println(" Moved out of loop !!")
-	// Prints:  Breaking out of 0 iteration; Breaking out of 1 iteration; Breaking out of 2 iteration; Moved out of loop !!
+	// Prints:  Breaking out of 0 iteration; Breaking out of 1 iteration;
+	// Breaking out of 2 iteration; Moved out of loop !!
 }
 
-func solution() {
+func alternative() {
 loop: // Creating a label
 	for i := 0; i < 5; i++ {
 		select {
@@ -42,6 +43,6 @@ loop: // Creating a label
 	// Prints:  Breaking out of 0 iteration; Moved out of loop !!
 }
 
-// Output of Program:
+// Output :
 // Breaking out of 0 iteration; Breaking out of 1 iteration; Breaking out of 2 iteration; Moved out of loop !!
 // Breaking out of 0 iteration; Moved out of loop !!

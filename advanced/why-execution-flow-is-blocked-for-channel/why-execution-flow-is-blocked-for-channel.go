@@ -27,7 +27,7 @@ func main() {
 	fmt.Println("Done Sending !!")
 }
 
-// Output is:
+// Output :
 // processed: 1
 // Sending 2
 // processed: 2

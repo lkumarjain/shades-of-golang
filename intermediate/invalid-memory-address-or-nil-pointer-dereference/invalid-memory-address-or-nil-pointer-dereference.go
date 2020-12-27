@@ -21,14 +21,19 @@ func main() {
 	aa := &A{Name: "FOO"}
 	bb := (*A)(nil)
 	cc := &A{}
-	Test(aa.Go)
+	Test(aa.Go) // Prints: GO: &{FOO}
 
 	// The variable bb is nil so calling bb.Go() method is expected to cause a panic
 	// "runtime error: invalid memory address or nil pointer dereference",
 	// but the method call succeeds.
 	// detailed explaination available in
 	// https://lkumarjain.blogspot.com/2020/01/why-calling-method-on-nil-struct.html
-	Test(bb.Go)
+	Test(bb.Go) // Prints: GO: <nil>
 
-	Test(cc.Go)
+	Test(cc.Go) // Prints: GO: &{}
 }
+
+// Output
+// GO: &{FOO}
+// GO: <nil>
+// GO: &{}

@@ -34,7 +34,7 @@ func alternative() {
 	fmt.Println(v) // prints Alternative 2
 }
 
-// Output or the program is:
+// Output:
 // Trap 1
 // Trap 1
 // Trap 2

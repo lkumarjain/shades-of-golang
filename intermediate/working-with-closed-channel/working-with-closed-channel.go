@@ -48,7 +48,7 @@ func alternative() {
 	time.Sleep(3 * time.Second)
 }
 
-// Output is Program:
+// Output :
 // 10
 // panic: send on closed channel
 // 4 sent result

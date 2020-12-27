@@ -8,7 +8,7 @@ import "fmt"
 // use label in break statement (similar to goto statements)
 func main() {
 	trap()
-	solution()
+	alternative()
 }
 
 func trap() {
@@ -21,10 +21,11 @@ func trap() {
 	}
 
 	fmt.Println(" Moved out of loop !!")
-	// Prints:  Breaking out of 0 iteration; Breaking out of 1 iteration; Breaking out of 2 iteration; Moved out of loop !!
+	// Prints:  Breaking out of 0 iteration; Breaking out of 1 iteration;
+	// Breaking out of 2 iteration; Moved out of loop !!
 }
 
-func solution() {
+func alternative() {
 loop: // Creating a label
 	for i := 0; i < 5; i++ {
 		switch {
@@ -38,6 +39,6 @@ loop: // Creating a label
 	// Prints:  Breaking out of 0 iteration; Moved out of loop !!
 }
 
-// Output of a program:
+// Output :
 // Breaking out of 0 iteration; Breaking out of 1 iteration; Breaking out of 2 iteration; Moved out of loop !!
 // Breaking out of 0 iteration; Moved out of loop !!

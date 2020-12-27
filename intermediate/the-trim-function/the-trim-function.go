@@ -13,6 +13,6 @@ func main() {
 	fmt.Println(strings.TrimSuffix("CABBA", "BA"))    // Output: "AB"
 }
 
-// Output is:
+// Output:
 // C
 // CAB

@@ -14,7 +14,7 @@ func main() {
 func trap() {
 	s := []int{1, 2, 3, 4, 5}
 	for _, v := range s {
-		v *= 5 //original item is not changed
+		v *= 5 // original item is not changed
 	}
 
 	fmt.Println(s) // prints [1 2 3 4 5]
@@ -23,12 +23,12 @@ func trap() {
 func alternative() {
 	s := []int{1, 2, 3, 4, 5}
 	for i := range s {
-		s[i] *= 5
+		s[i] *= 5 // original item is updated
 	}
 
 	fmt.Println(s) // prints data: [5 10 15 20 25]
 }
 
-// Output of program:
+// Output :
 // [1 2 3 4 5]
 // [5 10 15 20 25]

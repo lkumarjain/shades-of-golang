@@ -14,20 +14,24 @@ func main() {
 
 func trap() {
 	raw := make([]byte, 100)
-	fmt.Println("Trap", len(raw), cap(raw), &raw[0]) // prints: Trap 100 100 0xc00001a150
+	fmt.Println("Trap", len(raw), cap(raw), &raw[0])
+	// prints: Trap 100 100 0xc00001a150
 	data := raw[:10]
-	fmt.Println("Trap", len(data), cap(data), &data[0]) // prints: Trap 10 100 0xc00001a150
+	fmt.Println("Trap", len(data), cap(data), &data[0])
+	// prints: Trap 10 100 0xc00001a150
 }
 
 func alterrnative() {
 	raw := make([]byte, 100)
-	fmt.Println("Alterrnative", len(raw), cap(raw), &raw[0]) // prints: Alterrnative 100 100 0xc00010c070
+	fmt.Println("Alterrnative", len(raw), cap(raw), &raw[0])
+	// prints: Alterrnative 100 100 0xc00010c070
 	data := make([]byte, 10)
 	copy(data, raw[:10])
-	fmt.Println("Alterrnative", len(data), cap(data), &data[0]) // prints: Alterrnative 10 10 0xc000112008
+	fmt.Println("Alterrnative", len(data), cap(data), &data[0])
+	// prints: Alterrnative 10 10 0xc000112008
 }
 
-// Output of a program
+// Output :
 // Trap 100 100 0xc00010c000
 // Trap 10 100 0xc00010c000
 // Alterrnative 100 100 0xc00010c070

@@ -44,7 +44,7 @@ func alternative() {
 	fmt.Println("Alternative all done !!")
 }
 
-// Output of a program:
+// Output :
 // [4] Trap is running
 // [0] Trap is running
 // [1] Trap is running

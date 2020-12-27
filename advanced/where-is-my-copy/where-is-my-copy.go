@@ -37,7 +37,7 @@ func alternative2() {
 	fmt.Println("Alternative2: Source:", source, "Destination: ", destination)
 }
 
-// Output of this program:
+// Output :
 // Trap: Source:  [1 2 3 4 5]  Destination:  []
 // Alternative1: Source: [1 2 3 4 5] Destination:  [1 2 3 4 5]  (Copied 5 numbers)
 // Alternative2: Source: [1 2 3 4 5] Destination:  [1 2 3 4 5]
