@@ -62,5 +62,5 @@ These are the most complex Gotchas and needs good amount of digging to identify 
 - unexpected-value-is-being-passed-in-differed-function
 - wrong-use-of-defer-can-cause-resource-leak
 - why-execution-flow-is-blocked-for-channel
-- where-is-my-copy
+- where-is-my-copy 
 
